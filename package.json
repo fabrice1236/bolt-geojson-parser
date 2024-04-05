@@ -14,9 +14,9 @@
     "node": "14.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-node"
+    "url": "https://github.com/fabrice1236/bolt-geojson-parser/"
   },
-  "license": "MIT",
+  "license": "GNU-GPLv3",
   "keywords": [
     "node",
     "glitch"
