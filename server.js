@@ -1,6 +1,5 @@
 
 const axios = require('axios');
-const BoltURL = /*'https://mds.bolt.eu/gbfs/2/336/free_bike_status'*/'https://gbfs.api.ridedott.com/public/v2/brussels/free_bike_status.json'; //MODIFY ME TO WHATEVER BOLT CITY ENDPOINT YOU'D LIKE
 
 
 const fastify = require("fastify")({
@@ -8,6 +7,7 @@ const fastify = require("fastify")({
 });
 
 // ADD FAVORITES ARRAY VARIABLE FROM TODO HERE
+
 function convert(array) {
   let FeatureDic = [];
   for (let i = 0; i < array.length; i++) {
@@ -28,6 +28,7 @@ function convert(array) {
     }
 
   }
+
   let final = `{
   "type": "FeatureCollection",
   "features": [${FeatureDic}]}`;
@@ -71,6 +72,7 @@ fastify.get("/lime", async function (request, reply) {
 
   return reply.send(JSON.parse(final));
 });
+
 
 
 fastify.listen(
