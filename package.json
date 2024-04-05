@@ -1,7 +1,7 @@
 {
-  "name": "glitch-hello-node",
-  "version": "1.0.0",
-  "description": "A Bolt data GeoJSON parser.",
+  "name": "gbfs-to-geojson",
+  "version": "1.1.0",
+  "description": "A GBFS to GeoJSON parser.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
